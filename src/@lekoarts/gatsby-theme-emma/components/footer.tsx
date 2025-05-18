@@ -7,7 +7,9 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="layout.footer">
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      We are @Libertas B #421 Yonsei University<br/>
+      85 Songdogwahak-ro, Yeonsu-gu, Incheon, Republic of Korea<br/><br/>
+      Copyright &copy; {new Date().getFullYear()} DIAG. All rights reserved.
       <br />
       <Flex
         sx={{

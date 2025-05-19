@@ -39,7 +39,7 @@ const Project: React.FC<React.PropsWithChildren<PageProps<EmmaProjectProps>>> = 
 
   return (
     <Layout>
-      <Hero image={project.cover.childImageSharp.gatsbyImageData} color={project.color}>
+      <Hero image={project.cover.childImageSharp.gatsbyImageData} color={project.color} slim={true}>
         <Flex
           sx={{
             position: `absolute`,
@@ -63,7 +63,7 @@ const Project: React.FC<React.PropsWithChildren<PageProps<EmmaProjectProps>>> = 
           </animated.div>
         </Flex>
       </Hero>
-      <Container>
+      <Container sx={{ mt: 3, mb: 4 }}>
         <animated.div style={contentProps}>{children}</animated.div>
       </Container>
     </Layout>

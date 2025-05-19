@@ -11,11 +11,11 @@ type HeroProps = {
   image: IGatsbyImageData
 }
 
-const Hero = ({ children, color = ``, image, slim = false }: HeroProps) => (
+const Hero = ({ children, color = ``, image, slim = true }: HeroProps) => (
   <section
     sx={{
       position: `relative`,
-      height: slim ? [`400px`, `500px`] : [`500px`, `600px`, `700px`, `40vw`],
+      height: slim ? [`300px`, `300px`] : [`500px`, `600px`, `700px`, `40vw`],
       maxHeight: `1200px`,
       width: `100%`,
       overflow: `hidden`,

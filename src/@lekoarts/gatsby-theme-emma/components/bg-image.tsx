@@ -18,7 +18,7 @@ const BGImage = ({ children, color = ``, slim }: BGImageProps) => {
     <div
       sx={{
         width: `100%`,
-        height: slim ? [`400px`, `500px`] : [`500px`, `600px`, `700px`, `40vw`],
+        height: slim ? [`300px`, `300px`] : [`500px`, `600px`, `700px`, `40vw`],
         maxHeight: `1200px`,
         zIndex: 1,
         // @ts-ignore
@@ -28,7 +28,7 @@ const BGImage = ({ children, color = ``, slim }: BGImageProps) => {
           "> div": {
             paddingBottom: `0 !important`,
             height: slim
-              ? [`400px !important`, `500px !important`]
+              ? [`300px !important`, `300px !important`]
               : [`500px !important`, `600px !important`, `700px !important`, `40vw !important`],
             maxHeight: `1200px`,
           },

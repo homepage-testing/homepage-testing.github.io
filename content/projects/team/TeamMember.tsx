@@ -9,7 +9,13 @@ type Props = {
 }
 
 const TeamMember = ({ name, image, homepage, position }: Props) => (
-  <div sx={{ width: "23%", textAlign: "center", marginBottom: "2rem" }}>
+  <div
+    sx={{
+      width: ["100%", "48%", "23%"], // Mobile, tablet, desktop
+      textAlign: "center",
+      marginBottom: "2rem",
+    }}
+  >
     <div
       sx={{
         width: "200px",

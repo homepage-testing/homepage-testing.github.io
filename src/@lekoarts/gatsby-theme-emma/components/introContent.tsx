@@ -1,11 +1,14 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import { MDXProvider } from "@mdx-js/react"
 import { MDXContent } from "@mdx-js/react"
 
 import { useEffect, useState } from "react"
+import { newsItems } from "../../../data/news-data";
 
-const NewsContent = () => {
+
+const IntroContent = () => {
 
 
   const [isMobile, setIsMobile] = useState(false);
@@ -76,14 +79,37 @@ const NewsContent = () => {
       <br/><br/>
 
       {/* News */}
+      <div>
         <h2 style={{ fontWeight: "bold", fontSize: "1.5rem", marginBottom: "1.5rem" }}>📰 Lab News</h2>
         <ul style={{ paddingLeft: "1.2rem", listStyleType: "disc" }}>
-          <li><strong>May 2025:</strong> 🎉 We launched our new homepage!</li>
-          <li><strong>July 2021:</strong> 🎉 We launched our lab DIAG in DGIST, Daegu, South Korea.</li>
+          {newsItems.slice(0, 7).map((item, index) => (
+            <li key={index}>
+              <strong>{item.date}:</strong> {item.text}
+            </li>
+          ))}
         </ul>
+        {/* More button */}
+        <div style={{ marginTop: "1rem" }}>
+          <Link
+            to="/news"
+            style={{
+              display: "inline-block",
+              padding: "0.2rem 0.5rem",
+              backgroundColor: "#FA9CBE",
+              color: "white",
+              borderRadius: "0.2rem",
+              textDecoration: "none",
+              fontWeight: "normal",
+              fontSize: "1rem",
+            }}
+          >
+            More →
+          </Link>
+        </div>
+      </div>
       </section>
     </>
   );
 };
 
-export default NewsContent;
+export default IntroContent;

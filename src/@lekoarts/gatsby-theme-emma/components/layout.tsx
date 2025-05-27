@@ -5,7 +5,7 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 import useNavigation from "../hooks/use-navigation"
 import Footer from "./footer"
 import Header from "./header"
-import NewsContent from "./NewsContent"
+import IntroContent from "./IntroContent"
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -39,7 +39,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => {
       </Box>
 
       {/* Only show on homepage and avoid SSR error */}
-      {isHomepage && <NewsContent />}
+      {isHomepage && <IntroContent />}
 
       <Footer />
     </React.Fragment>

@@ -1,4 +1,115 @@
 
+## 🚀 Gatsby Project Setup & Editing Guide
+
+### ✅ 1. **Clone the Repository**
+
+Open your terminal and run:
+
+```bash
+git clone {url to this repo}
+cd your-gatsby-repo
+```
+
+---
+
+### 📦 2. Install Dependencies
+
+Make sure you have **Node.js (v14+ recommended)** installed. Then run:
+
+```bash
+npm install
+```
+
+or if you're using Yarn:
+
+```bash
+yarn
+```
+
+---
+
+### 📝 3. Edit Files
+
+You can now open the project in your code editor (e.g., VS Code or Atom):
+
+Typical files to edit:
+
+* `src/data/news-data.ts`: News content
+* `content/pages/projects/team/team.json`: Add new member profiles (please add relevant images in `static/team` folder)
+* `content/pages/projects/labprojects/projects.json`: Projects content (please add relevant images in `static` folder)
+* `
+
+---
+
+### 💻 4. Preview Locally
+
+To start a local development server with hot reloading:
+
+```bash
+gatsby develop
+```
+
+Then open your browser and visit:
+👉 `http://localhost:8000`
+
+---
+
+### 🧹 5. Clean the Cache (Optional but Important)
+
+If you’re facing **weird errors**, plugin bugs, or stale content, run:
+
+```bash
+gatsby clean
+```
+
+This will:
+
+* Remove `.cache/` and `public/` folders
+* Ensure a fresh build environment
+
+---
+
+### 🏗️ 6. Build the Production Version
+
+To generate optimized static files for deployment:
+
+```bash
+gatsby build
+```
+
+This generates the optimized static files in the `public/` directory.
+
+---
+
+### 🚀 7. Deploy the Site
+
+Since our `package.json` includes a `deploy` script like:
+
+```json
+"scripts": {
+  "deploy": "gh-pages -d public"
+}
+```
+
+You can deploy using:
+
+```bash
+npm run deploy
+```
+
+This publishes the contents of the `public/` folder (your built Gatsby site) to **GitHub Pages** (or another static host, depending on how your deploy script is configured).
+
+---
+
+
+
+
+
+
+
+
+=============================
+
 Website creating using the Gatsby Theme [`@lekoarts/gatsby-theme-emma`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emma).
 
 ## ✨ Features

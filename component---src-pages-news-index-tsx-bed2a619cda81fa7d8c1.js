@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkemma=self.webpackChunkemma||[]).push([[185],{9863:function(e,t,l){l.r(t);var a=l(6540),n=l(8573),m=l(1819);t.default=()=>a.createElement(m.A,null,a.createElement("main",{style:{padding:"2rem"}},a.createElement("div",{style:{maxWidth:"800px",margin:"0 auto"}},a.createElement("h1",null,"📰 Lab News"),a.createElement("ul",null,n.C.map(((e,t)=>a.createElement("li",{key:t},a.createElement("strong",null,e.date,":")," ",e.text)))))))}}]);
+//# sourceMappingURL=component---src-pages-news-index-tsx-bed2a619cda81fa7d8c1.js.map

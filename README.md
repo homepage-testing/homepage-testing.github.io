@@ -97,18 +97,20 @@ You can deploy using:
 npm run deploy
 ```
 
-This publishes the contents of the `public/` folder (your built Gatsby site) to **GitHub Pages** (or another static host, depending on how your deploy script is configured).
+This publishes the contents of the `public/` folder (your built Gatsby site) to **GitHub Pages**.
 
 ---
 
+---
 
+---
 
+---
 
+---
 
+(Below is part of readme file from the original gatsby theme.)
 
-
-
-=============================
 
 Website creating using the Gatsby Theme [`@lekoarts/gatsby-theme-emma`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-emma).
 
